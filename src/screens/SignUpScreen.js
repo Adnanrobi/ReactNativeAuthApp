@@ -33,10 +33,10 @@ const SignUpScreen = (props) => {
 
             <Button
                 icon={<AntDesign name="checkcircleo" size={24} color="black" />}
-                title="  Sign In"
+                title="  Sign Up"
                 onPress={
                 function () {
-                    props.navigation.navigate('Home')
+                    props.navigation.navigate('SignIn')
                 }
             } />
 
