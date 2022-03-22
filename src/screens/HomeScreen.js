@@ -9,13 +9,14 @@ const HomeScreen = (props) => {
       {
         (auth) => (
           <View>
-            <Text>HomeScreen</Text>
+            <Text>Welcome {auth.CurrentUser.name}</Text>
             <Button
               title="LogOut"
               type="outline"
               onPress={
                 function () {
                   auth.setIsLoggedIn(false);
+                  auth.setCurrentUser({});
                 }
               }/>
           </View>
